@@ -4,12 +4,12 @@ const app = express();
 const serverless = require('serverless-http');
 const PORT = 5000;
 
-const eventRoutes = require('./router/eventsrouter.js');
-const userRoutes = require('./router/authrouter.js');
-const inventoryRoutes = require('./router/inventoryrouter.js');
-const projectRoutes = require('./router/projectsrouter.js');
-const resourceRoutes = require('./router/resourcesrouter.js');
-const selfProjectRoutes = require('./router/selfprojectrouter.js');
+const eventRoutes = require('../router/eventsrouter.js');
+const userRoutes = require('../router/authrouter.js');
+const inventoryRoutes = require('../router/inventoryrouter.js');
+const projectRoutes = require('../router/projectsrouter.js');
+const resourceRoutes = require('../router/resourcesrouter.js');
+const selfProjectRoutes = require('../router/selfprojectrouter.js');
 
 app.use(express.json());
 require('dotenv').config(); 
